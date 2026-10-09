@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Outer Gradient Ring: Left Arc (Green) -->
+    <path
+        android:pathData="M 64,56 A 50,50 0 0,0 52,100 A 50,50 0 0,0 100,150"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeColor="#2DC653" />
+
+    <!-- Outer Gradient Ring: Bottom-Right Arc (Cyan to Blue) -->
+    <path
+        android:pathData="M 100,150 A 50,50 0 0,0 148,100 A 50,50 0 0,0 136,66"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeColor="#00C9FF" />
+
+    <!-- Outer Ring Top-Left small green accent arc -->
+    <path
+        android:pathData="M 72,48 A 50,50 0 0,1 86,40"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeColor="#38B000" />
+
+    <!-- 3 Wi-Fi Arcs (Top Right) -->
+    <!-- Arc 1: Inner -->
+    <path
+        android:pathData="M 124,58 A 20,20 0 0,1 138,52"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:strokeColor="#00A8FF" />
+
+    <!-- Arc 2: Middle -->
+    <path
+        android:pathData="M 124,48 A 30,30 0 0,1 146,39"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:strokeColor="#0096FF" />
+
+    <!-- Arc 3: Outer -->
+    <path
+        android:pathData="M 124,38 A 40,40 0 0,1 154,26"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:strokeColor="#0080FF" />
+
+    <!-- Water Droplet (Top Center) -->
+    <path
+        android:pathData="M 100,32 C 100,32 84,56 84,68 C 84,77 91,84 100,84 C 109,84 116,77 116,68 C 116,56 100,32 100,32 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="100"
+                android:startY="32"
+                android:endX="100"
+                android:endY="84"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00C2FF" />
+                <item android:offset="0.6" android:color="#0080FF" />
+                <item android:offset="1.0" android:color="#0052D4" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Water Droplet Shine Highlight -->
+    <path
+        android:pathData="M 90,64 C 89,70 92,75 94,76 C 92,74 91,70 92,64 Z"
+        android:fillColor="#80FFFFFF" />
+
+    <!-- Soil Mound at Bottom of circle -->
+    <path
+        android:pathData="M 64,120 C 74,125 86,118 100,128 C 114,118 126,125 136,120 C 132,135 118,144 100,144 C 82,144 68,135 64,120 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="100"
+                android:startY="118"
+                android:endX="100"
+                android:endY="144"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#6D4327" />
+                <item android:offset="1.0" android:color="#3B2211" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Soil texture specks -->
+    <path
+        android:pathData="M 78,128 a 1.5,1.5 0 1,0 0.1,0 Z M 106,134 a 1.5,1.5 0 1,0 0.1,0 Z M 122,129 a 1.5,1.5 0 1,0 0.1,0 Z"
+        android:fillColor="#8C5835" />
+
+    <!-- Plant Stem -->
+    <path
+        android:pathData="M 100,126 C 100,118 100,102 100,98 C 98,106 97,118 100,126 Z"
+        android:fillColor="#1B4332" />
+
+    <!-- Plant Left Leaf -->
+    <path
+        android:pathData="M 98,124 C 96,112 88,94 72,78 C 60,66 46,69 46,81 C 46,95 68,108 94,125 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="46"
+                android:startY="68"
+                android:endX="98"
+                android:endY="125"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#52B788" />
+                <item android:offset="0.5" android:color="#2DC653" />
+                <item android:offset="1.0" android:color="#1B4332" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Left Leaf Vein Line -->
+    <path
+        android:pathData="M 94,123 C 82,110 68,96 54,77"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeColor="#40FFFFFF" />
+
+    <!-- Plant Right Leaf -->
+    <path
+        android:pathData="M 100,123 C 101,108 106,96 118,86 C 130,76 140,84 136,97 C 132,110 116,118 100,124 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="100"
+                android:startY="76"
+                android:endX="140"
+                android:endY="124"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#70E000" />
+                <item android:offset="0.6" android:color="#38B000" />
+                <item android:offset="1.0" android:color="#007200" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Leaf Vein Line -->
+    <path
+        android:pathData="M 101,121 C 110,111 122,100 131,89"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:strokeColor="#40FFFFFF" />
+</vector>

@@ -1,0 +1,7 @@
+{
+  "name": "moistur.io",
+  "description": "ESP32-based smart plant watering controller over local Wi-Fi with soil moisture monitoring and pump control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
